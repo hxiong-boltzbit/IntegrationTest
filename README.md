@@ -1,5 +1,8 @@
 # A test repository to test webhood for Github integration. 
 
+
+<img src="https://demo.platform.boltzbit.com/github-service/api/v1/projects/status/train?repositoryName=HanchenXiong/IntegrationTest&token=eyJraWQiOiIxYzM3YjNkOS1iYzhjLTQ5YjAtOTQxMS02N2E0YWU5ZjViNzIiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2MTk3OTcwZDgyNmNlNDFmYmNiMDUwMDYiLCJpc3MiOiJCb2x0emJpdCBMdGQiLCJleHAiOjE2NDA2MzU2NjQsImlhdCI6MTY0MDAzMDg2NCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdfQ.f1eSHp3ItUinf9UwR9E7hKLH08a2CPEIpTLrlxURnTmIGUiAxxI9xpiq8RrrphadfiU1KxCK8gVm0tl7A8vk-FIjz-B20u6ep0-Iiy96ZO3Lv7NXY1KWQTvL8Kx9BzZBdiKJ04OElezMmGqRpX2jM4cjbY5bMmIvTuZ1M9TAmWntARon3MUPGkyxtKizi1drfPJPL0A0Evm5WXTRvieagme1Sg9_Fc2FQDgF60TtkNlEzVoNZrukEf15mKq7U27HmUD1H0tQa1chg2ugZ0YTlfMDDVEVe3zwICbDCuVWjPHx75GCIdILn984A0K8UbB2by1ddGjsIcUVStlLGQG_HVkcSplIIaAK0RHzeGCwtOaBe8Sc3wgSz-uv3EZWtcSnIFITo1cc6pV6vMV3cwJ31kNq6V2nxmi1kup-cW13J1sA-fsqaVwYekxC1QK-H2P8KCSo9BGtK9-YlUru77rppe69J7gw0RUgQ5kxQdyLnjYBFMuUl7olwci8OC5lNSR65amIvt_c3PM2-EH3ryRcT3XX1RHDTQdZNZ_rP1P2i_PA_L4GlVAN9Qx2SCewKjWj4eS9RnTWJ3qddM1yqGR_QxzH2CgUZ-n7r6d6G4HpNt5cnuJljUW8HUMRb8h9O0nq9wgVTTsj7jFub7bS4CANX5I6i17Z0OA3ShVBCkgQs4g"> 
+
 [![Data Status](https://img.shields.io/badge/Boltzbit-DATASET:REGISTERED-green)](https://demo.platform.boltzbit.com/app/#/data/61c0b373e13340046a69e044)
 [![Training Status](https://img.shields.io/badge/Boltzbit-TRAINING:DONE-green)](https://demo.platform.boltzbit.com/app/#/cube/61c0b6494de76071b876f66d)
 [![Serving Status](https://img.shields.io/badge/Boltzbit-SERVING:ON-green)](https://demo.platform.boltzbit.com/app/#/deployment/61c0b6494de76071b876f66d/61c0b649b60ca00bf6e932a9)
