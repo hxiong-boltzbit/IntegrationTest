@@ -1,2 +1,84 @@
 {
+  "id": "61fa72dccc63e5228119fc37",
+  "createdBy": "demo-user",
+  "createdAt": "Feb 2, 2022 12:02:36 PM",
+  "sharedWith": [
+    {
+      "userGroupId": "PUBLIC",
+      "accessLevel": "READ_ONLY"
+    }
+  ],
+  "cubeId": "61fa72dbcc63e5228119fc36",
+  "datasetId": "61fa72ba3acc33576533d6ce",
+  "modelId": "61fa72da80e060700a19cf08",
+  "dataProcessingConfig": {
+    "steps": [
+      {
+        "operation": "RESCALE"
+      }
+    ]
+  },
+  "trainingConfig": {
+    "ckpt_file": "ckpt.npz",
+    "dtype": "float32",
+    "batch_size": 100,
+    "infer": {
+      "lkh_weight": 10,
+      "min_eps": 0.001,
+      "nlayers": 10,
+      "lfsteps": 5,
+      "initial_log_eps": -3,
+      "initial_ei_prior_mean": 0,
+      "initial_ei_prior_std": 1
+    },
+    "train": {
+      "trn_weight": 10,
+      "optimizer": {
+        "learning_rate_init": 2e-4,
+        "learning_rate_change_points": [],
+        "learning_rate_change_values": [],
+        "learning_rate_inf_init": 2e-4,
+        "learning_rate_inf_change_points": [],
+        "learning_rate_inf_change_values": []
+      },
+      "max_iter": 2000,
+      "save_period": 200,
+      "logging_period": 10
+    },
+    "dataloader": {
+      "trn_tst_split": 1.0,
+      "shuffle": true,
+      "repeat": false
+    }
+  },
+  "evaluationConfig": {
+    "method": "EVAL_DEFAULT",
+    "trainingJobId": "61fa72dd49f9835f941eb684",
+    "datasetId": "61fa72ba3acc33576533d6ce",
+    "taskIds": [
+      "61fa72dc3acc33576533d6cf",
+      "61fa72dc3acc33576533d6d0",
+      "61fa72dc3acc33576533d6d1"
+    ],
+    "metrics": [
+      {
+        "type": "AVERAGE_LOG_LOSS"
+      },
+      {
+        "type": "AVERAGE_ACCURACY"
+      },
+      {
+        "type": "AVERAGE_PERCENTAGE_ERROR"
+      },
+      {
+        "type": "AVERAGE_ERROR"
+      },
+      {
+        "type": "PR_CURVE"
+      },
+      {
+        "type": "ROC_CURVE"
+      }
+    ]
+  }
 }
