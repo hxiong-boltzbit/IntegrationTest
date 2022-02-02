@@ -1,10 +1,7 @@
-# A test repository to test webhood for Github integration. 
+# HanchenXiong/IntegrationTest 
 
-[![Boltzbit Project](https://img.shields.io/badge/Boltzbit-Project-blueviolet?style=for-the-badge)](https://demo.platform.boltzbit.com/app/#/github-integration)
+[![Boltzbit Project](https://img.shields.io/badge/Boltzbit-Project-blueviolet?style=for-the-badge)](https://demo.platform.boltzbit.com/demo-user/HanchenXiong/IntegrationTest
 
-![Data Status](https://img.shields.io/badge/Boltzbit-Dataset:Registered-green)
-![Training Status](https://img.shields.io/badge/Boltzbit-Training-green)
-![Serving Status](https://img.shields.io/badge/Boltzbit-EvaluationON-green)
-
-
-
+[![Data Status](http://demo.platform.boltzbit.com/github-service/api/v1/cubes/status/data?repositoryOwnerPlusName=HanchenXiong/IntegrationTest&token=PUBLIC)](https://demo.platform.boltzbit.com/demo-user/HanchenXiong/IntegrationTest?tab=Dataset)
+[![Training Status](http://demo.platform.boltzbit.com/github-service/api/v1/cubes/status/train?repositoryOwnerPlusName=HanchenXiong/IntegrationTest&token=PUBLIC)](https://demo.platform.boltzbit.com/demo-user/HanchenXiong/IntegrationTest?tab=Training)
+[![Serving Status](http://demo.platform.boltzbit.com/github-service/api/v1/cubes/status/serving?repositoryOwnerPlusName=HanchenXiong/IntegrationTest&token=PUBLIC)](https://demo.platform.boltzbit.com/demo-user/HanchenXiong/IntegrationTest)
