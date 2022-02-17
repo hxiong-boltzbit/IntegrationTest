@@ -1,16 +1,15 @@
 {
-  "id": "620bc45f01a7d374f0534a79",
+  "id": "620e41d2a3c9c869c240e62e",
   "createdBy": "demo-user",
-  "createdAt": "Feb 15, 2022 3:18:55 PM",
+  "createdAt": "Feb 17, 2022 12:38:42 PM",
   "sharedWith": [
     {
-      "userGroupId": "PUBLIC",
-      "accessLevel": "READ_ONLY"
+      "userGroupId": "demo-user"
     }
   ],
-  "cubeId": "620bc45e01a7d374f0534a78",
-  "datasetId": "620bc44ad553eb181ef3b3a0",
-  "modelId": "620bc45e3ee03e74c389389f",
+  "cubeId": "620e41d1a3c9c869c240e62d",
+  "datasetId": "620e2c0da29c644ba8aaf531",
+  "modelId": "620e2d67c315100d33fb9b5b",
   "dataProcessingConfig": {
     "steps": [
       {
@@ -19,46 +18,50 @@
     ]
   },
   "trainingConfig": {
-    "ckpt_file": "ckpt.npz",
-    "dtype": "float32",
     "batch_size": 100,
     "infer": {
-      "lkh_weight": 10,
+      "lkh_weight": 1,
       "min_eps": 0.001,
       "nlayers": 10,
-      "lfsteps": 5,
+      "lfsteps": 6,
+      "momentum_std": 0.1,
       "initial_log_eps": -3,
       "initial_ei_prior_mean": 0,
-      "initial_ei_prior_std": 1
+      "initial_ei_prior_std": 1,
+      "stop_gradient_pot": false
     },
     "train": {
-      "trn_weight": 10,
+      "trn_weight": 1,
       "optimizer": {
-        "learning_rate_init": 2e-4,
-        "learning_rate_change_points": [],
-        "learning_rate_change_values": [],
-        "learning_rate_inf_init": 2e-4,
-        "learning_rate_inf_change_points": [],
-        "learning_rate_inf_change_values": []
+        "learning_rate_init": 5e-3,
+        "learning_rate_change_points": 200,
+        "learning_rate_change_values": 0.99,
+        "learning_rate_inf_init": 5e-3,
+        "learning_rate_inf_change_points": 200,
+        "learning_rate_inf_change_values": 0.99
       },
-      "max_iter": 2000,
-      "save_period": 200,
+      "max_iter": 500,
+      "save_period": 50,
       "logging_period": 10
     },
     "dataloader": {
       "trn_tst_split": 1.0,
-      "shuffle": true,
-      "repeat": false
+      "sampler": {
+        "type": "PlainSampler",
+        "args": {
+          "shuffle": true
+        }
+      }
     }
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "trainingJobId": "620bc45f89b0d215526ff967",
-    "datasetId": "620bc44ad553eb181ef3b3a0",
+    "trainingJobId": "620e41d2f1c6700da9a4cb05",
+    "datasetId": "620e2c0da29c644ba8aaf531",
     "taskIds": [
-      "620bc45ed553eb181ef3b3a1",
-      "620bc45ed553eb181ef3b3a2",
-      "620bc45ed553eb181ef3b3a3"
+      "620e2d6aa29c644ba8aaf537",
+      "620e2d6aa29c644ba8aaf538",
+      "620e2d6aa29c644ba8aaf539"
     ],
     "metrics": [
       {
